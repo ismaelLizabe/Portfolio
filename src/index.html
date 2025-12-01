@@ -1,69 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="portfolioCss.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Ismael ismaelLizabe</title>
+    <link rel="stylesheet" href="portfolioCss.css" />
 </head>
 <body>
-    <div class="intro">
-        <H1>
-            Imsael Lizabe Benedí,junior developer
-        </H1>
 
-        <p>
-            
-        </p>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        <button>
-            
-        </button>
+    <section class="isma">
+        <div class="isma-texto">
+            <h1>Ismael Lizabe, Software Junior</h1>
+            <p>I design and build beautiful and functional web applications. Let's create something amazing together.</p>
 
-        <button>
-
-        </button>
-
-        <link rel="stylesheet" href="FotoCara.jpg">
-
-    </div>
-    <div class="about me">
-        <div id="history">
-            <h3>A bit About my Journey</h3>
-            <p></p>
+            <div class="isma-botones">
+                <a href="#projects" class="btn principal">View My Work</a>
+                <a href="#contact" class="btn">Get In Touch</a>
+            </div>
         </div>
 
-        <div id="Skills">Skils
-            <h2>Core Skills</h2>
-            <div></div>      
-        </div>
-    </div>
+        
+    </section>
 
-    <div class ="projects">
+    <section id="about" class="about">
+        <div class="about-container">
+            <div>
+                <h2>About Me</h2>
+                <h3>A Bit About My Journey</h3>
+                <p>
+                    I'm a passionate developer with a background in user experience design.
+                    I thrive on solving complex problems and creating intuitive, user-friendly interfaces.
+                    My goal is to bridge the gap between technical implementation and user-centric design
+                    to deliver outstanding digital products.
+                </p>
+            </div>
+
+            <div>
+                <h2>Core Skills</h2>
+                <div class="skills">
+                    <span>Html 5/CSS</span>
+                    <span>JavaScript</span>
+                    <span>Figma</span>
+                    <span>Node.js</span>
+                    <span>Java</span>
+                    <span>PostgresSQL</span>
+                    <span>Tailwind CSS</span>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
         <h2>Projects</h2>
-        <div class="cartas">
-            <div>
-                <img src="ImgP1" alt="">
-                <h2>Project One</h2>
-                <p></p>
-                <button></button>
-                <button></button>
+
+        <div class="project-list">
+            <div class="project-card">
+                <img src="C:\Users\USUARIO\Desktop\Daw2\portfolio\Portfolio\src\img\Poker.jpeg" alt="Project One">
+                <h3>Poker Java</h3>
+                <p>It's a Java code just to play 1 vs 1 poker</p>
+                <div class="tags">
+                    <span>Java</span>
+                    
+                </div>
+                <div class="links">
+                    <a href="#">Live Demo</a>
+                    <a href="https://github.com/ismaelLizabe/Poker">Source Code</a>
+                </div>
             </div>
-            <div>
-                <img src="ImgP3" alt="">
-                <h2>Project One</h2>
-                <p></p>
-                <button></button>
-                <button></button>
+
+            <div class="project-card">
+                <img src="C:\Users\USUARIO\Desktop\Daw2\portfolio\Portfolio\src\img\cine.jpeg" alt="Project Two">
+                <h3>Cinema management</h3>
+                <p>Its an app that helps the management of cinemas, helping with stock, with prices and shedules.</p>
+                <div class="tags">
+                    <span>Java</span>
+                    <span>MariaDB</span>
+                </div>
+                <div class="links">
+                    <a href="#">Live Demo</a>
+                    <a href="https://github.com/YagoCelma/GestionCine">Source Code</a>
+                </div>
             </div>
-            <div>
-                <img src="ImgP3" alt="">
-                <h2>Project One</h2>
+
+            <div class="project-card">
+                <img src="" alt="">
+                <h3>Project Three</h3>
                 <p></p>
-                <button></button>
-                <button></button>
+                <div class="tags">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="links">
+                    <a href="#">Live Demo</a>
+                    <a href="#">Source Code</a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <p>Feel free to send me a message about anything you want to discuss. Let’s connect!</p>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit" class="btn primary">Send Message</button>
+        </form>
+
+        <div class="social">
+            <a href="#">LinkedIn</a>
+            <a href="https://github.com/ismaelLizabe">GitHub</a>
+            <a href="#">Twitter</a>
+        </div>
+    </section>
+
+    <footer>
+        © 2024 Ismael Lizabe. All rights reserved.
+    </footer>
+
 </body>
 </html>
